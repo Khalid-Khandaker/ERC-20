@@ -1,17 +1,18 @@
-# CustomToken Smart Contract
+# Khalid Token (KLD)
 
-## Overview
-CustomToken is an ERC20 token with minting and burning features. It uses OpenZeppelin for secure token and ownership management.
+An ERC20 token with minting, burning, and transferring functions.
 
-## Token Details
-- **Name**: Khalid  
-- **Symbol**: KLD  
+## Features
+- **Mint:** Owner can mint tokens.
+- **Burn:** Users can burn their own tokens.
+- **Transfer:** Users can transfer tokens.
 
 ## Functions
-- **`createTokens(address recipient, uint256 tokenAmount)`**: Mint tokens (owner-only).  
-- **`destroyTokens(uint256 tokenAmount)`**: Burn tokens (user-only).  
+- `createToken(address recipient, uint256 tokenAmount)` — Mint tokens (Owner only).
+- `destroyToken(uint256 tokenAmount)` — Burn tokens.
+- `transferToken(address recipient, uint256 amount)` — Transfer tokens.
 
-## Requirements
-- **Solidity**: `^0.8.0`  
-- **Dependencies**: OpenZeppelin ERC20 and Ownable contracts.  
-
+## Token Details
+- **Name:** Khalid
+- **Symbol:** KLD
+- **Standard:** ERC20
