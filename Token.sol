@@ -18,4 +18,9 @@ contract Token is ERC20, Ownable {
     function destroyToken(uint256 tokenAmount) public {
         _burn(msg.sender, tokenAmount);
     }
+
+    function transferToken(address recipient, uint256 amount) public returns (bool) {
+        _transfer(msg.sender, recipient, amount);
+        return true;
+    }
 }
